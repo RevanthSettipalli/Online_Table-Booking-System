@@ -82,3 +82,30 @@ body{
     border-radius:20px;
     
     }
+
+    .hidden{
+        display:none !important;
+        }
+        
+        #booking{
+        display:none;
+        padding:40px;
+        background:white;
+        min-height:100vh;
+        }
+        
+        #gallery{
+        display:none;
+        }
+        
+        #contact{
+        display:none;
+        }
+        
+        #home{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        }

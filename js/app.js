@@ -1,9 +1,7 @@
-// Authentication
+function toggleAuth(){
 
-function toggleAuth() {
-
-    const title = document.getElementById("authTitle");
-    const text = document.getElementById("authToggleText");
+    const title=document.getElementById("authTitle");
+    const text=document.getElementById("authToggleText");
     
     if(title.innerText==="Register"){
     title.innerText="Login";
@@ -22,43 +20,34 @@ function toggleAuth() {
     
     e.preventDefault();
     
-    document.getElementById("auth").style.display="none";
+    document.getElementById("auth").classList.add("hidden");
     
     document
     .getElementById("mainWebsite")
-    .classList
-    .remove("hidden");
-    
-    document.getElementById("home").style.display="flex";
+    .classList.remove("hidden");
     
     });
     
     
     
-    // Navigation
+    function showSection(id){
     
-    function showSection(sectionId){
+    ["home","booking","gallery","contact"]
+    .forEach(section=>{
     
-    // hide all sections
+    document
+    .getElementById(section)
+    .style.display="none";
     
-    document.getElementById("home").style.display="none";
+    });
     
-    document.getElementById("booking").style.display="none";
-    
-    document.getElementById("gallery").style.display="none";
-    
-    document.getElementById("contact").style.display="none";
-    
-    
-    // show selected
-    
-    document.getElementById(sectionId).style.display="block";
+    document
+    .getElementById(id)
+    .style.display="block";
     
     }
     
     
-    
-    // Booking
     
     document
     .getElementById("bookingForm")
@@ -66,6 +55,6 @@ function toggleAuth() {
     
     e.preventDefault();
     
-    alert("Booking Confirmed!");
+    alert("Table Reserved Successfully!");
     
     });
