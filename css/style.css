@@ -334,3 +334,123 @@
     }
     
     }
+    /* ========================= */
+/* TABLE BOOKING BACKGROUND */
+/* ========================= */
+
+#booking{
+
+    background:
+    
+    linear-gradient(
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.55)
+    ),
+    
+    url("https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=2500&q=100");
+    
+    background-size:cover !important;
+    
+    background-position:center !important;
+    
+    background-repeat:no-repeat !important;
+    
+    width:100vw !important;
+    
+    height:100vh !important;
+    
+    padding:40px;
+    
+    overflow:auto;
+    
+    }
+    
+    
+    
+    /* ========================= */
+    /* BOOKING FORM CARD */
+    /* ========================= */
+    
+    #booking form{
+    
+    background:
+    
+    rgba(0,0,0,.65);
+    
+    padding:40px;
+    
+    border-radius:20px;
+    
+    max-width:700px;
+    
+    margin:auto;
+    
+    }
+    
+    
+    
+    /* ========================= */
+    /* CONFIRM PAGE BACKGROUND */
+    /* ========================= */
+    
+    #thankyou{
+    
+    background:
+    
+    linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.45)
+    ),
+    
+    url("https://img.freepik.com/premium-vector/luxury-restaurant-logo-design_586739-388.jpg");
+    
+    background-size:cover !important;
+    
+    background-position:center !important;
+    
+    background-repeat:no-repeat !important;
+    
+    width:100vw !important;
+    
+    height:100vh !important;
+    
+    display:flex;
+    
+    justify-content:center;
+    
+    align-items:center;
+    
+    flex-direction:column;
+    
+    text-align:center;
+    
+    color:white;
+    
+    }
+    
+    
+    
+    /* ========================= */
+    /* THANK YOU TEXT */
+    /* ========================= */
+    
+    #thankyou h1{
+    
+    font-size:80px;
+    
+    text-shadow:
+    2px 2px 20px black;
+    
+    }
+    
+    #thankyou h2{
+    
+    font-size:45px;
+    
+    }
+    
+    #thankyou p{
+    
+    font-size:30px;
+    
+    }
