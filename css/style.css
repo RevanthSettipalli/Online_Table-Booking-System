@@ -1,13 +1,19 @@
 body{
+
     margin:0;
+    
     font-family:Arial;
+    
     }
     
     .hidden{
+    
     display:none;
+    
     }
     
     .hero{
+    
     height:100vh;
     
     background:
@@ -25,33 +31,6 @@ body{
     align-items:center;
     
     color:white;
-    }
-    
-    .section-container{
-    
-    margin-top:30px;
-    
-    display:none;
-    
-    }
-    
-    .gallery{
-    
-    display:grid;
-    
-    grid-template-columns:
-    
-    repeat(auto-fit,minmax(300px,1fr));
-    
-    gap:20px;
-    
-    }
-    
-    .gallery img{
-    
-    width:100%;
-    
-    border-radius:15px;
     
     }
     
@@ -65,7 +44,11 @@ body{
     
     align-items:center;
     
-    background:#111;
+    background:
+    
+    url("https://png.pngtree.com/background/20230611/original/pngtree-restaurant-table-set-with-plates-picture-image_3169395.jpg");
+    
+    background-size:cover;
     
     }
     
@@ -73,39 +56,30 @@ body{
     
     width:350px;
     
-    padding:30px;
+    padding:40px;
     
-    background:#222;
+    background:
     
-    color:white;
+    rgba(0,0,0,.6);
     
     border-radius:20px;
     
+    color:#DAA520;
+    
     }
-
-    .hidden{
-        display:none !important;
-        }
-        
-        #booking{
-        display:none;
-        padding:40px;
-        background:white;
-        min-height:100vh;
-        }
-        
-        #gallery{
-        display:none;
-        }
-        
-        #contact{
-        display:none;
-        }
-        
-        #home{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        height:100vh;
-        }
+    
+    .section-container{
+    
+    display:none;
+    
+    padding:60px;
+    
+    }
+    
+    #confirmationPage{
+    
+    text-align:center;
+    
+    padding-top:150px;
+    
+    }
