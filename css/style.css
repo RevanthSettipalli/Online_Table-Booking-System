@@ -20,7 +20,9 @@
     }
     
     .hidden{
+    
     display:none !important;
+    
     }
     
     
@@ -62,7 +64,7 @@
     
     border-radius:20px;
     
-    background:rgba(0,0,0,.6);
+    background:rgba(0,0,0,.60);
     
     color:#DAA520;
     
@@ -70,7 +72,7 @@
     
     
     
-    /* HOME */
+    /* HOME PAGE */
     
     .hero{
     
@@ -86,9 +88,9 @@
     
     flex-direction:column;
     
-    color:white;
-    
     text-align:center;
+    
+    color:white;
     
     background:
     
@@ -102,6 +104,8 @@
     background-size:cover;
     
     background-position:center;
+    
+    background-repeat:no-repeat;
     
     }
     
@@ -121,15 +125,16 @@
     
     .hero button{
     
-    padding:16px 45px;
+    padding:18px 50px;
     
-    font-size:25px;
+    font-size:26px;
     
     }
     
     
     
     /* BOOKING PAGE */
+    /* UNCHANGED */
     
     #booking{
     
@@ -170,9 +175,9 @@
     
     color:white;
     
-    text-align:center;
-    
     font-size:60px;
+    
+    text-align:center;
     
     margin-bottom:40px;
     
@@ -207,6 +212,7 @@
     
     
     /* CONFIRMATION PAGE */
+    /* UPDATED IMAGE */
     
     #thankyou{
     
@@ -232,16 +238,18 @@
     
     text-align:center;
     
+    overflow:hidden;
+    
     color:white;
     
     background:
     
     linear-gradient(
-    rgba(0,0,0,.45),
-    rgba(0,0,0,.45)
+    rgba(0,0,0,.40),
+    rgba(0,0,0,.40)
     ),
     
-    url("../assets/restaurant-logo-template-luxury-restaurant-logo-design-vector-illustration_610874-11664.jpeg");
+    url("../assets/360_F_637166455_RZOHg6K3M6noLPKQmOHH5ZI70zXEyDaq.jpg");
     
     background-size:cover;
     
@@ -277,24 +285,30 @@
     
     #thankyou button{
     
-    margin-top:30px;
+    margin-top:35px;
     
-    padding:16px 50px;
+    padding:18px 60px;
     
     font-size:24px;
+    
+    border:none;
+    
+    border-radius:10px;
+    
+    background:#ffc107;
     
     }
     
     
     
-    /* REMOVE GAPS */
+    /* REMOVE EXTRA SPACING */
     
     .container{
     
     max-width:none !important;
     
-    margin:0 !important;
-    
     padding:0 !important;
+    
+    margin:0 !important;
     
     }
