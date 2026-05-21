@@ -1,7 +1,7 @@
 body{
     margin:0;
+    padding:0;
     font-family:Arial,sans-serif;
-    background:#111;
     overflow-x:hidden;
     }
     
@@ -9,13 +9,7 @@ body{
     display:none;
     }
     
-    /* NAVBAR */
-    
-    .navbar{
-    padding:20px;
-    }
-    
-    /* LOGIN PAGE */
+    /* LOGIN */
     
     .auth-container{
     
@@ -40,50 +34,47 @@ body{
     
     background-position:center;
     
+    background-repeat:no-repeat;
+    
     }
     
     .auth-card{
     
-    width:420px;
+    width:400px;
     
     padding:40px;
     
-    border-radius:20px;
-    
     background:
     
-    rgba(0,0,0,.65);
+    rgba(0,0,0,.6);
     
-    backdrop-filter:blur(10px);
+    border-radius:20px;
     
     color:#DAA520;
     
-    }
-    
-    .auth-card h2{
-    
-    text-align:center;
-    
-    margin-bottom:30px;
+    backdrop-filter:blur(10px);
     
     }
     
     .auth-card input{
     
+    height:50px;
+    
     margin-bottom:20px;
     
-    height:50px;
-    
-    }
-    
-    .auth-card button{
-    
-    height:50px;
-    
     }
     
     
-    /* HOME PAGE */
+    /* NAVBAR */
+    
+    .navbar{
+    
+    padding:20px;
+    
+    }
+    
+    
+    /* HOME */
     
     .hero{
     
@@ -108,38 +99,37 @@ body{
     rgba(0,0,0,.45)
     ),
     
-    url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2000&q=80");
+    url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2200&q=80");
     
     background-size:cover;
     
-    background-repeat:no-repeat;
-    
     background-position:center;
+    
+    background-repeat:no-repeat;
     
     }
     
     .hero h1{
     
-    font-size:72px;
+    font-size:80px;
     
     text-shadow:
-    0 0 30px black;
+    
+    0 0 25px black;
     
     }
     
     .hero p{
     
-    font-size:26px;
+    font-size:30px;
     
     }
     
     .hero button{
     
-    padding:16px 40px;
+    padding:15px 40px;
     
     font-size:24px;
-    
-    border-radius:12px;
     
     }
     
@@ -150,9 +140,9 @@ body{
     
     display:none;
     
-    min-height:100vh;
+    height:100vh;
     
-    padding:80px;
+    width:100%;
     
     background:
     
@@ -161,13 +151,17 @@ body{
     rgba(0,0,0,.55)
     ),
     
-    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2000&q=80");
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2200&q=80");
     
     background-size:cover;
     
+    background-position:center;
+    
     background-repeat:no-repeat;
     
-    background-position:center;
+    background-attachment:fixed;
+    
+    padding:60px;
     
     color:white;
     
@@ -177,9 +171,9 @@ body{
     
     text-align:center;
     
-    margin-bottom:40px;
-    
     font-size:60px;
+    
+    margin-bottom:40px;
     
     }
     
@@ -191,7 +185,7 @@ body{
     
     padding:40px;
     
-    border-radius:30px;
+    border-radius:25px;
     
     background:
     
@@ -222,7 +216,11 @@ body{
     
     display:none;
     
-    min-height:100vh;
+    height:100vh;
+    
+    width:100%;
+    
+    padding:60px;
     
     background:
     
@@ -231,7 +229,7 @@ body{
     rgba(0,0,0,.6)
     ),
     
-    url("https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=2000&q=80");
+    url("https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=2200&q=80");
     
     background-size:cover;
     
@@ -239,7 +237,7 @@ body{
     
     background-repeat:no-repeat;
     
-    color:white;
+    background-attachment:fixed;
     
     display:flex;
     
@@ -251,16 +249,17 @@ body{
     
     text-align:center;
     
-    padding:50px;
+    color:white;
     
     }
     
     #thankyou h1{
     
-    font-size:80px;
+    font-size:85px;
     
     text-shadow:
-    0 0 30px black;
+    
+    0 0 35px black;
     
     }
     
@@ -268,11 +267,27 @@ body{
     
     font-size:50px;
     
+    background:
+    
+    rgba(0,0,0,.4);
+    
+    padding:20px;
+    
+    border-radius:20px;
+    
     }
     
     #thankyou p{
     
-    font-size:24px;
+    font-size:28px;
+    
+    background:
+    
+    rgba(0,0,0,.4);
+    
+    padding:20px;
+    
+    border-radius:20px;
     
     }
     
@@ -280,46 +295,9 @@ body{
     
     margin-top:40px;
     
-    padding:18px 40px;
+    padding:15px 40px;
     
-    font-size:24px;
-    
-    }
-    
-    
-    /* GALLERY */
-    
-    .gallery{
-    
-    display:grid;
-    
-    grid-template-columns:
-    
-    repeat(auto-fit,minmax(300px,1fr));
-    
-    gap:20px;
-    
-    padding:40px;
-    
-    }
-    
-    .gallery img{
-    
-    width:100%;
-    
-    height:300px;
-    
-    object-fit:cover;
-    
-    border-radius:20px;
-    
-    transition:.4s;
-    
-    }
-    
-    .gallery img:hover{
-    
-    transform:scale(1.05);
+    font-size:22px;
     
     }
     
@@ -329,33 +307,23 @@ body{
     @media(max-width:768px){
     
     .hero h1{
-    
-    font-size:40px;
-    
+    font-size:45px;
     }
     
     .hero p{
-    
     font-size:18px;
-    
     }
     
     .auth-card{
-    
     width:90%;
-    
     }
     
     #booking h2{
-    
     font-size:36px;
-    
     }
     
     #thankyou h1{
-    
     font-size:45px;
-    
     }
     
     }
