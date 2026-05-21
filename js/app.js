@@ -1,77 +1,72 @@
-const authForm=
-document.getElementById("authForm");
+function toggleAuth() {
 
-const auth=
-document.getElementById("auth");
-
-const main=
-document.getElementById("mainWebsite");
-
-const title=
-document.getElementById("authTitle");
-
-const toggleText=
-document.getElementById("authToggleText");
-
-function toggleAuth(){
-
-if(title.textContent==="Register"){
-
-title.textContent="Login";
-
-toggleText.innerText=
-"Create Account";
-
-}
-
-else{
-
-title.textContent=
-"Register";
-
-toggleText.innerText=
-"Already have account?";
-
-}
-
-}
-
-authForm.addEventListener(
-
-"submit",
-
-(e)=>{
-
-e.preventDefault();
-
-auth.style.display="none";
-
-main.classList.remove("hidden");
-
-}
-
-);
-
-function showSection(id){
-
-document
-
-.querySelectorAll(
-
-".section-container"
-
-)
-
-.forEach(
-
-s=>s.style.display="none"
-
-);
-
-document
-
-.getElementById(id)
-
-.style.display="block";
-
-}
+    const title = document.getElementById("authTitle");
+    const text = document.getElementById("authToggleText");
+    
+    if (title.innerText === "Register") {
+    title.innerText = "Login";
+    text.innerText = "Don't have an account?";
+    }
+    else {
+    title.innerText = "Register";
+    text.innerText = "Already have an account?";
+    }
+    
+    }
+    
+    const authForm = document.getElementById("authForm");
+    
+    authForm.addEventListener("submit", function(e){
+    
+    e.preventDefault();
+    
+    document.getElementById("auth").style.display="none";
+    
+    document
+    .getElementById("mainWebsite")
+    .classList
+    .remove("hidden");
+    
+    showSection("home");
+    
+    });
+    
+    
+    function showSection(id){
+    
+    document
+    .querySelectorAll(".section-container")
+    .forEach(section=>{
+    section.style.display="none";
+    });
+    
+    document.getElementById("home").style.display="none";
+    
+    const selected =
+    document.getElementById(id);
+    
+    if(selected){
+    selected.style.display="block";
+    }
+    
+    }
+    
+    
+    const bookingForm =
+    document.getElementById("bookingForm");
+    
+    if(bookingForm){
+    
+    bookingForm.addEventListener(
+    "submit",
+    function(e){
+    
+    e.preventDefault();
+    
+    alert(
+    "Table booked successfully!"
+    );
+    
+    });
+    
+    }
