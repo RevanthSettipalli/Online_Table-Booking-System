@@ -1,33 +1,70 @@
-const auth = document.getElementById("auth");
-const main = document.getElementById("mainWebsite");
-const authForm = document.getElementById("authForm");
+const auth=document.getElementById("auth");
 
-const authTitle = document.getElementById("authTitle");
-const authToggleText = document.getElementById("authToggleText");
+const main=document.getElementById("mainWebsite");
 
-let loginMode = false;
+const authForm=document.getElementById("authForm");
 
-// START → SHOW LOGIN PAGE
+const authTitle=document.getElementById("authTitle");
+
+const submitBtn=document.getElementById("submitBtn");
+
+const authText=document.getElementById("authText");
+
+let login=false;
+
 main.classList.add("hidden");
 
-function toggleAuth() {
 
-loginMode = !loginMode;
+function toggleAuth(){
 
-if(loginMode){
+login=!login;
+
+if(login){
+
 authTitle.innerText="Login";
-authToggleText.innerText="Don't have account?";
+
+submitBtn.innerText="Login";
+
+authText.innerText=
+"New User?";
+
 }
+
 else{
+
 authTitle.innerText="Register";
-authToggleText.innerText="Already have account?";
-}
+
+submitBtn.innerText=
+"Register";
+
+authText.innerText=
+"Already have account?";
 
 }
 
-authForm.addEventListener("submit",(e)=>{
+}
+
+
+
+authForm.addEventListener(
+
+"submit",
+
+(e)=>{
 
 e.preventDefault();
+
+if(!login){
+
+alert(
+"Registration Successful → Login Now"
+);
+
+toggleAuth();
+
+return;
+
+}
 
 auth.style.display="none";
 
@@ -35,46 +72,54 @@ main.classList.remove("hidden");
 
 showSection("home");
 
-});
+}
+
+);
+
+
 
 function showSection(id){
 
-const sections=document.querySelectorAll(".section-container");
+document
+.querySelectorAll(
+".section-container"
+)
 
-sections.forEach(section=>{
-section.style.display="none";
-});
+.forEach(
 
-document.getElementById(id).style.display="block";
+x=>x.style.display="none"
 
-window.scrollTo({
-top:0,
-behavior:"smooth"
-});
+);
+
+document
+.getElementById(id)
+.style.display="block";
 
 }
 
-// BOOK NOW BUTTON
-document.addEventListener("DOMContentLoaded",()=>{
-
-showSection("home");
-
-});
 
 
-// RESERVE BUTTON
-const bookingForm=document.getElementById("bookingForm");
+document
+.getElementById(
+"bookingForm"
+)
 
-if(bookingForm){
+.addEventListener(
 
-bookingForm.addEventListener("submit",(e)=>{
+"submit",
+
+(e)=>{
 
 e.preventDefault();
 
-document.getElementById("booking").style.display="none";
+alert(
+"✅ Table Booked Successfully"
+);
 
-document.getElementById("confirmationPage").style.display="block";
-
-});
+showSection(
+"thankyou"
+);
 
 }
+
+);
