@@ -8,85 +8,29 @@
     
     html,
     body{
+    
     width:100%;
+    
     height:100%;
+    
     overflow:hidden;
+    
     font-family:Arial,sans-serif;
+    
     }
+    
     
     /* HIDE */
     
     .hidden{
-    display:none !important;
-    }
     
-    
-    /* HOME PAGE */
-    
-    .hero{
-    
-    width:100vw;
-    
-    height:100vh;
-    
-    display:flex;
-    
-    flex-direction:column;
-    
-    justify-content:center;
-    
-    align-items:center;
-    
-    text-align:center;
-    
-    color:white;
-    
-    background:
-    linear-gradient(
-    rgba(0,0,0,.45),
-    rgba(0,0,0,.45)
-    ),
-    
-    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=3000&q=100");
-    
-    background-size:cover;
-    
-    background-position:center;
-    
-    background-repeat:no-repeat;
-    
-    }
-    
-    .hero h1{
-    
-    font-size:80px;
-    
-    text-shadow:0 0 25px black;
-    
-    }
-    
-    .hero p{
-    
-    font-size:28px;
-    
-    margin:20px;
-    
-    }
-    
-    .hero button{
-    
-    padding:18px 50px;
-    
-    font-size:30px;
-    
-    border:none;
-    
-    border-radius:12px;
+    display:none;
     
     }
     
     
-    /* LOGIN */
+    
+    /* LOGIN PAGE */
     
     .auth-container{
     
@@ -101,12 +45,13 @@
     align-items:center;
     
     background:
+    
     linear-gradient(
-    rgba(0,0,0,.5),
-    rgba(0,0,0,.5)
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.55)
     ),
     
-    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=3000&q=100");
+    url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=2500&q=100");
     
     background-size:cover;
     
@@ -116,33 +61,97 @@
     
     }
     
+    
     .auth-card{
     
     width:420px;
     
     padding:40px;
     
-    background:rgba(0,0,0,.55);
-    
     border-radius:25px;
     
+    background:
+    
+    rgba(0,0,0,.55);
+    
     color:#DAA520;
+    
+    backdrop-filter:blur(10px);
     
     }
     
     .auth-card input{
     
-    margin-bottom:20px;
-    
     height:60px;
     
-    }
-    
-    .auth-card button{
-    
-    height:55px;
+    margin-bottom:20px;
     
     }
+    
+    
+    
+    /* HOME */
+    
+    .hero{
+    
+    width:100vw;
+    
+    height:100vh;
+    
+    display:flex;
+    
+    justify-content:center;
+    
+    align-items:center;
+    
+    flex-direction:column;
+    
+    text-align:center;
+    
+    color:white;
+    
+    background:
+    
+    linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.45)
+    ),
+    
+    url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=3000&q=100");
+    
+    background-size:cover;
+    
+    background-position:center;
+    
+    background-repeat:no-repeat;
+    
+    }
+    
+    .hero h1{
+    
+    font-size:80px;
+    
+    text-shadow:
+    0 0 25px black;
+    
+    }
+    
+    .hero p{
+    
+    font-size:30px;
+    
+    margin:20px;
+    
+    }
+    
+    .hero button{
+    
+    padding:18px 45px;
+    
+    font-size:26px;
+    
+    }
+    
     
     
     /* BOOKING PAGE */
@@ -155,19 +164,9 @@
     
     left:0;
     
-    right:0;
-    
-    bottom:0;
-    
     width:100vw;
     
     height:100vh;
-    
-    margin:0;
-    
-    padding:0;
-    
-    overflow:auto;
     
     display:flex;
     
@@ -177,13 +176,18 @@
     
     flex-direction:column;
     
+    padding:40px;
+    
+    overflow:auto;
+    
     background:
+    
     linear-gradient(
     rgba(0,0,0,.55),
     rgba(0,0,0,.55)
     ),
     
-    url("https://images.adsttc.com/media/images/6408/4f34/9641/e801/7f2e/79c5/large_jpg/akaari-premium-restaurant-nh-village-architects_14.jpg");
+    url("https://b.zmtcdn.com/data/pictures/8/19491888/6f0d6bfe2d34d9cf4267b7e26b378f55.jpg");
     
     background-size:cover;
     
@@ -197,7 +201,7 @@
     
     color:white;
     
-    font-size:70px;
+    font-size:65px;
     
     margin-bottom:40px;
     
@@ -209,17 +213,19 @@
     
     max-width:90%;
     
-    background:rgba(0,0,0,.65);
-    
     padding:50px;
     
     border-radius:25px;
+    
+    background:
+    
+    rgba(0,0,0,.65);
     
     }
     
     #booking input{
     
-    height:65px;
+    height:60px;
     
     margin-bottom:20px;
     
@@ -227,14 +233,15 @@
     
     #booking button{
     
-    padding:16px 50px;
+    padding:18px 50px;
     
-    font-size:26px;
+    font-size:24px;
     
     }
     
     
-    /* THANK YOU PAGE */
+    
+    /* CONFIRMATION PAGE */
     
     #thankyou{
     
@@ -244,17 +251,9 @@
     
     left:0;
     
-    right:0;
-    
-    bottom:0;
-    
     width:100vw;
     
     height:100vh;
-    
-    margin:0;
-    
-    padding:0;
     
     display:flex;
     
@@ -264,19 +263,22 @@
     
     flex-direction:column;
     
+    text-align:center;
+    
+    padding:40px;
+    
     overflow:hidden;
     
     color:white;
     
-    text-align:center;
-    
     background:
+    
     linear-gradient(
-    rgba(0,0,0,.45),
-    rgba(0,0,0,.45)
+    rgba(0,0,0,.50),
+    rgba(0,0,0,.50)
     ),
     
-    url("https://img.freepik.com/premium-vector/luxury-restaurant-logo-design_586739-388.jpg");
+    url("https://img.freepik.com/premium-vector/restaurant-logo-template-luxury-restaurant-logo-design-vector-illustration_390140749.jpg");
     
     background-size:cover;
     
@@ -288,15 +290,16 @@
     
     #thankyou h1{
     
-    font-size:95px;
+    font-size:90px;
     
-    text-shadow:0 0 20px black;
+    text-shadow:
+    0 0 30px black;
     
     }
     
     #thankyou h2{
     
-    font-size:45px;
+    font-size:50px;
     
     margin-top:20px;
     
@@ -304,7 +307,7 @@
     
     #thankyou p{
     
-    font-size:35px;
+    font-size:30px;
     
     margin-top:20px;
     
@@ -312,7 +315,7 @@
     
     #thankyou button{
     
-    margin-top:40px;
+    margin-top:35px;
     
     padding:18px 60px;
     
@@ -327,27 +330,33 @@
     }
     
     
-    /* REMOVE BOOTSTRAP GAPS */
     
-    .container,
-    .container-fluid{
+    /* MOBILE */
     
-    width:100% !important;
+    @media(max-width:768px){
     
-    max-width:none !important;
+    .hero h1{
     
-    padding:0 !important;
-    
-    margin:0 !important;
+    font-size:45px;
     
     }
     
-    nav{
+    .auth-card{
     
-    position:absolute;
+    width:90%;
     
-    width:100%;
+    }
     
-    z-index:100;
+    #booking form{
+    
+    width:95%;
+    
+    }
+    
+    #thankyou h1{
+    
+    font-size:50px;
+    
+    }
     
     }
