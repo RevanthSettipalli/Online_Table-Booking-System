@@ -1,5 +1,3 @@
-/* RESET */
-
 *{
     margin:0;
     padding:0;
@@ -8,31 +6,20 @@
     
     html,
     body{
-    
     width:100%;
-    
     height:100%;
-    
-    overflow:hidden;
-    
+    overflow-x:hidden;
     font-family:Arial,sans-serif;
-    
     }
     
     .hidden{
-    
-    display:none !important;
-    
+    display:none;
     }
     
-    
-    
-    /* LOGIN PAGE */
+    /* LOGIN */
     
     .auth-container{
-    
-    width:100vw;
-    
+    width:100%;
     height:100vh;
     
     display:flex;
@@ -42,18 +29,15 @@
     align-items:center;
     
     background:
-    
     linear-gradient(
     rgba(0,0,0,.45),
     rgba(0,0,0,.45)
     ),
     
-    url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=2500&q=100");
+    url("https://images.unsplash.com/photo-1514933651103-005eec06c04b");
     
     background-size:cover;
-    
     background-position:center;
-    
     }
     
     .auth-card{
@@ -62,21 +46,18 @@
     
     padding:40px;
     
-    border-radius:20px;
+    background:rgba(0,0,0,.55);
     
-    background:rgba(0,0,0,.60);
+    border-radius:20px;
     
     color:#DAA520;
     
     }
     
     
-    
-    /* HOME PAGE */
+    /* HOME */
     
     .hero{
-    
-    width:100vw;
     
     height:100vh;
     
@@ -93,19 +74,16 @@
     color:white;
     
     background:
-    
     linear-gradient(
-    rgba(0,0,0,.45),
-    rgba(0,0,0,.45)
+    rgba(0,0,0,.4),
+    rgba(0,0,0,.4)
     ),
     
-    url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2500&q=100");
+    url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0");
     
     background-size:cover;
     
     background-position:center;
-    
-    background-repeat:no-repeat;
     
     }
     
@@ -115,26 +93,18 @@
     
     }
     
-    .hero p{
-    
-    font-size:28px;
-    
-    margin:20px;
-    
-    }
-    
     .hero button{
     
-    padding:18px 50px;
+    margin-top:20px;
     
-    font-size:26px;
+    padding:18px 40px;
+    
+    font-size:22px;
     
     }
-    
     
     
     /* BOOKING PAGE */
-    /* UNCHANGED */
     
     #booking{
     
@@ -155,10 +125,9 @@
     padding:40px;
     
     background:
-    
     linear-gradient(
-    rgba(0,0,0,.55),
-    rgba(0,0,0,.55)
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.45)
     ),
     
     url("../assets/download.jpg");
@@ -173,13 +142,13 @@
     
     #booking h2{
     
-    color:white;
-    
-    font-size:60px;
-    
     text-align:center;
     
-    margin-bottom:40px;
+    color:white;
+    
+    font-size:55px;
+    
+    margin-bottom:30px;
     
     }
     
@@ -191,13 +160,13 @@
     
     margin:auto;
     
-    padding:50px;
-    
-    border-radius:20px;
+    padding:40px;
     
     background:
     
-    rgba(0,0,0,.65);
+    rgba(0,0,0,.55);
+    
+    border-radius:20px;
     
     }
     
@@ -209,10 +178,14 @@
     
     }
     
+    #booking button{
+    
+    padding:14px 35px;
+    
+    }
     
     
-    /* CONFIRMATION PAGE */
-    /* UPDATED IMAGE */
+    /* THANK YOU */
     
     #thankyou{
     
@@ -228,6 +201,20 @@
     
     height:100vh;
     
+    background:
+    linear-gradient(
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.55)
+    ),
+    
+    url("../assets/confirmation.jpg");
+    
+    background-size:cover;
+    
+    background-position:center;
+    
+    background-repeat:no-repeat;
+    
     display:flex;
     
     justify-content:center;
@@ -236,26 +223,9 @@
     
     flex-direction:column;
     
-    text-align:center;
-    
-    overflow:hidden;
-    
     color:white;
     
-    background:
-    
-    linear-gradient(
-    rgba(0,0,0,.40),
-    rgba(0,0,0,.40)
-    ),
-    
-    url("../assets/360_F_637166455_RZOHg6K3M6noLPKQmOHH5ZI70zXEyDaq.jpg");
-    
-    background-size:cover;
-    
-    background-position:center;
-    
-    background-repeat:no-repeat;
+    text-align:center;
     
     }
     
@@ -263,21 +233,19 @@
     
     font-size:90px;
     
-    text-shadow:0 0 25px black;
-    
     }
     
     #thankyou h2{
     
-    font-size:45px;
+    font-size:40px;
     
-    margin-top:20px;
+    margin-top:15px;
     
     }
     
     #thankyou p{
     
-    font-size:28px;
+    font-size:30px;
     
     margin-top:20px;
     
@@ -287,28 +255,29 @@
     
     margin-top:35px;
     
-    padding:18px 60px;
+    padding:15px 45px;
     
-    font-size:24px;
+    font-size:25px;
+    
+    background:#ffc107;
     
     border:none;
     
     border-radius:10px;
     
-    background:#ffc107;
-    
     }
     
     
-    
-    /* REMOVE EXTRA SPACING */
+    /* GENERAL */
     
     .container{
     
-    max-width:none !important;
+    max-width:100%;
     
-    padding:0 !important;
+    }
     
-    margin:0 !important;
+    .section-container{
+    
+    padding:40px;
     
     }
