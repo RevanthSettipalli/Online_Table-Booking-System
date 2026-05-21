@@ -1,3 +1,5 @@
+/* RESET */
+
 *{
     margin:0;
     padding:0;
@@ -8,79 +10,18 @@
     body{
     width:100%;
     height:100%;
-    overflow-x:hidden;
+    overflow:hidden;
     font-family:Arial,sans-serif;
     }
     
+    /* HIDE */
+    
     .hidden{
-    display:none;
-    }
-    
-    /* NAVBAR */
-    
-    .navbar{
-    padding:20px;
-    }
-    
-    /* LOGIN */
-    
-    .auth-container{
-    
-    width:100vw;
-    
-    height:100vh;
-    
-    display:flex;
-    
-    justify-content:center;
-    
-    align-items:center;
-    
-    background:
-    
-    linear-gradient(
-    rgba(0,0,0,.55),
-    rgba(0,0,0,.55)
-    ),
-    
-    url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=2500&q=100");
-    
-    background-size:cover;
-    
-    background-position:center;
-    
-    background-repeat:no-repeat;
-    
-    }
-    
-    .auth-card{
-    
-    width:400px;
-    
-    padding:40px;
-    
-    background:
-    
-    rgba(0,0,0,.6);
-    
-    border-radius:20px;
-    
-    color:#DAA520;
-    
-    backdrop-filter:blur(8px);
-    
-    }
-    
-    .auth-card input{
-    
-    height:55px;
-    
-    margin-bottom:20px;
-    
+    display:none !important;
     }
     
     
-    /* HOME */
+    /* HOME PAGE */
     
     .hero{
     
@@ -98,14 +39,15 @@
     
     text-align:center;
     
-    background:
+    color:white;
     
+    background:
     linear-gradient(
     rgba(0,0,0,.45),
     rgba(0,0,0,.45)
     ),
     
-    url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2500&q=100");
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=3000&q=100");
     
     background-size:cover;
     
@@ -113,24 +55,92 @@
     
     background-repeat:no-repeat;
     
-    color:white;
-    
     }
     
     .hero h1{
     
     font-size:80px;
     
-    text-shadow:
-    0 0 25px black;
+    text-shadow:0 0 25px black;
+    
+    }
+    
+    .hero p{
+    
+    font-size:28px;
+    
+    margin:20px;
     
     }
     
     .hero button{
     
-    padding:15px 40px;
+    padding:18px 50px;
     
-    font-size:24px;
+    font-size:30px;
+    
+    border:none;
+    
+    border-radius:12px;
+    
+    }
+    
+    
+    /* LOGIN */
+    
+    .auth-container{
+    
+    width:100vw;
+    
+    height:100vh;
+    
+    display:flex;
+    
+    justify-content:center;
+    
+    align-items:center;
+    
+    background:
+    linear-gradient(
+    rgba(0,0,0,.5),
+    rgba(0,0,0,.5)
+    ),
+    
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=3000&q=100");
+    
+    background-size:cover;
+    
+    background-position:center;
+    
+    background-repeat:no-repeat;
+    
+    }
+    
+    .auth-card{
+    
+    width:420px;
+    
+    padding:40px;
+    
+    background:rgba(0,0,0,.55);
+    
+    border-radius:25px;
+    
+    color:#DAA520;
+    
+    }
+    
+    .auth-card input{
+    
+    margin-bottom:20px;
+    
+    height:60px;
+    
+    }
+    
+    .auth-card button{
+    
+    height:55px;
     
     }
     
@@ -139,28 +149,41 @@
     
     #booking{
     
-    display:none;
-    
     position:fixed;
     
     top:0;
     
     left:0;
     
+    right:0;
+    
+    bottom:0;
+    
     width:100vw;
     
     height:100vh;
     
+    margin:0;
+    
+    padding:0;
+    
     overflow:auto;
     
-    background:
+    display:flex;
     
+    justify-content:center;
+    
+    align-items:center;
+    
+    flex-direction:column;
+    
+    background:
     linear-gradient(
     rgba(0,0,0,.55),
     rgba(0,0,0,.55)
     ),
     
-    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2500&q=100");
+    url("https://images.adsttc.com/media/images/6408/4f34/9641/e801/7f2e/79c5/large_jpg/akaari-premium-restaurant-nh-village-architects_14.jpg");
     
     background-size:cover;
     
@@ -168,19 +191,13 @@
     
     background-repeat:no-repeat;
     
-    padding:40px;
-    
     }
     
     #booking h2{
     
     color:white;
     
-    text-align:center;
-    
-    font-size:60px;
-    
-    margin-top:40px;
+    font-size:70px;
     
     margin-bottom:40px;
     
@@ -192,13 +209,9 @@
     
     max-width:90%;
     
-    margin:auto;
+    background:rgba(0,0,0,.65);
     
-    padding:40px;
-    
-    background:
-    
-    rgba(0,0,0,.65);
+    padding:50px;
     
     border-radius:25px;
     
@@ -206,7 +219,7 @@
     
     #booking input{
     
-    height:55px;
+    height:65px;
     
     margin-bottom:20px;
     
@@ -214,7 +227,9 @@
     
     #booking button{
     
-    padding:15px 35px;
+    padding:16px 50px;
+    
+    font-size:26px;
     
     }
     
@@ -223,26 +238,45 @@
     
     #thankyou{
     
-    display:none;
-    
     position:fixed;
     
     top:0;
     
     left:0;
     
+    right:0;
+    
+    bottom:0;
+    
     width:100vw;
     
     height:100vh;
     
-    background:
+    margin:0;
     
+    padding:0;
+    
+    display:flex;
+    
+    justify-content:center;
+    
+    align-items:center;
+    
+    flex-direction:column;
+    
+    overflow:hidden;
+    
+    color:white;
+    
+    text-align:center;
+    
+    background:
     linear-gradient(
-    rgba(0,0,0,.55),
-    rgba(0,0,0,.55)
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.45)
     ),
     
-    url("https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=2500&q=100");
+    url("https://img.freepik.com/premium-vector/luxury-restaurant-logo-design_586739-388.jpg");
     
     background-size:cover;
     
@@ -250,28 +284,13 @@
     
     background-repeat:no-repeat;
     
-    display:flex;
-    
-    flex-direction:column;
-    
-    justify-content:center;
-    
-    align-items:center;
-    
-    text-align:center;
-    
-    color:white;
-    
-    padding:40px;
-    
     }
     
     #thankyou h1{
     
-    font-size:90px;
+    font-size:95px;
     
-    text-shadow:
-    0 0 35px black;
+    text-shadow:0 0 20px black;
     
     }
     
@@ -279,13 +298,13 @@
     
     font-size:45px;
     
-    margin-top:15px;
+    margin-top:20px;
     
     }
     
     #thankyou p{
     
-    font-size:30px;
+    font-size:35px;
     
     margin-top:20px;
     
@@ -295,141 +314,40 @@
     
     margin-top:40px;
     
-    padding:15px 40px;
+    padding:18px 60px;
     
-    font-size:22px;
+    font-size:28px;
+    
+    border:none;
+    
+    border-radius:12px;
+    
+    background:#ffc107;
+    
+    }
+    
+    
+    /* REMOVE BOOTSTRAP GAPS */
+    
+    .container,
+    .container-fluid{
+    
+    width:100% !important;
+    
+    max-width:none !important;
+    
+    padding:0 !important;
+    
+    margin:0 !important;
     
     }
     
+    nav{
     
-    /* MOBILE */
+    position:absolute;
     
-    @media(max-width:768px){
+    width:100%;
     
-    .hero h1{
-    font-size:45px;
-    }
-    
-    #booking form{
-    width:95%;
-    }
-    
-    #thankyou h1{
-    font-size:48px;
-    }
+    z-index:100;
     
     }
-    /* FORCE FULL SCREEN */
-
-html,
-body{
-width:100% !important;
-height:100% !important;
-margin:0 !important;
-padding:0 !important;
-overflow:hidden !important;
-}
-
-.container{
-max-width:none !important;
-width:100% !important;
-margin:0 !important;
-padding:0 !important;
-}
-
-/* BOOKING */
-
-#booking{
-
-position:fixed !important;
-
-top:0 !important;
-
-left:0 !important;
-
-right:0 !important;
-
-bottom:0 !important;
-
-width:100vw !important;
-
-height:100vh !important;
-
-margin:0 !important;
-
-padding-top:120px !important;
-
-background-image:
-
-linear-gradient(
-rgba(0,0,0,.55),
-rgba(0,0,0,.55)
-),
-
-url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=3000&q=100") !important;
-
-background-size:100% 100% !important;
-
-background-repeat:no-repeat !important;
-
-background-position:center !important;
-
-overflow:auto !important;
-
-}
-
-#booking form{
-
-width:700px !important;
-
-max-width:90% !important;
-
-margin:auto !important;
-
-}
-
-
-/* THANK YOU */
-
-#thankyou{
-
-position:fixed !important;
-
-top:0 !important;
-
-left:0 !important;
-
-right:0 !important;
-
-bottom:0 !important;
-
-width:100vw !important;
-
-height:100vh !important;
-
-margin:0 !important;
-
-background-image:
-
-linear-gradient(
-rgba(0,0,0,.55),
-rgba(0,0,0,.55)
-),
-
-url("https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=3000&q=100") !important;
-
-background-size:100% 100% !important;
-
-background-repeat:no-repeat !important;
-
-background-position:center !important;
-
-display:flex !important;
-
-justify-content:center !important;
-
-align-items:center !important;
-
-flex-direction:column !important;
-
-}
