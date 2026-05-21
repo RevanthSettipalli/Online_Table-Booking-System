@@ -1,78 +1,53 @@
-// LOGIN / REGISTER
-
-const auth =
-document.getElementById("auth");
-
-const website =
-document.getElementById("mainWebsite");
-
-const authForm =
-document.getElementById("authForm");
-
-let login=false;
-
-
+let register=true;
 
 function toggleAuth(){
 
-login=!login;
+const title=document.getElementById("authTitle");
 
-const title=
-document.getElementById("authTitle");
+const text=document.getElementById("authToggleText");
 
-const button=
-document.querySelector(
-"#authForm button"
-);
+const btn=document.querySelector("#authForm button");
 
-const text=
-document.getElementById(
-"authToggleText"
-);
+if(register){
 
-if(login){
+title.innerHTML="Login";
 
-title.innerText="Login";
+btn.innerHTML="Login";
 
-button.innerText="Login";
-
-text.innerText=
-"New User?";
+text.innerHTML="Don't have account?";
 
 }
 
 else{
 
-title.innerText=
-"Register";
+title.innerHTML="Register";
 
-button.innerText=
-"Register";
+btn.innerHTML="Register";
 
-text.innerText=
-"Already have account?";
+text.innerHTML="Already have account?";
 
 }
 
+register=!register;
+
 }
 
 
+document
 
-// LOGIN
+.getElementById("authForm")
 
-authForm.addEventListener(
+.addEventListener(
 
 "submit",
 
-function(e){
+(e)=>{
 
 e.preventDefault();
 
-if(!login){
+if(register){
 
-alert(
-"Registration Successful → Login"
-);
+alert("Registered");
 
 toggleAuth();
 
@@ -80,112 +55,100 @@ return;
 
 }
 
-auth.style.display=
-"none";
+document
 
-website.classList.remove(
-"hidden"
-);
+.getElementById("auth")
 
-showHome();
-
-}
-
-);
-
-
-
-
-// HOME
-
-function showHome(){
-
-document.querySelector(
-".hero"
-).style.display="flex";
-
-document.getElementById(
-"booking"
-).style.display="none";
-
-document.getElementById(
-"thankyou"
-).style.display="none";
-
-}
-
-
-
-// BOOK NOW BUTTON
-
-function showBooking(){
-
-document.querySelector(
-".hero"
-).style.display=
-"none";
-
-document.getElementById(
-"booking"
-).style.display=
-"flex";
-
-document.getElementById(
-"bookingForm"
-).reset();
-
-}
-
-
-
-
-// RESERVE
+.style.display="none";
 
 document
-.getElementById(
-"bookingForm"
-)
+
+.getElementById("mainWebsite")
+
+.classList
+
+.remove("hidden");
+
+}
+
+);
+
+
+document
+
+.addEventListener(
+
+"DOMContentLoaded",
+
+()=>{
+
+document
+
+.getElementById("bookBtn")
+
+.addEventListener(
+
+"click",
+
+()=>{
+
+document
+
+.getElementById("home")
+
+.style.display="none";
+
+document
+
+.getElementById("booking")
+
+.style.display="block";
+
+}
+
+);
+
+}
+
+
+);
+
+
+document
+
+.getElementById("bookingForm")
 
 .addEventListener(
 
 "submit",
 
-function(e){
+(e)=>{
 
 e.preventDefault();
 
-alert(
-"✅ Table Booked"
-);
+alert("Table Booked");
 
-this.reset();
+e.target.reset();
 
-document.getElementById(
-"booking"
-).style.display=
-"none";
+document
 
-document.getElementById(
-"thankyou"
-).style.display=
-"flex";
+.getElementById("booking")
+
+.style.display="none";
+
+document
+
+.getElementById("thankyou")
+
+.style.display="flex";
 
 }
 
 );
 
 
-
-
-// BACK HOME
-
 function goHome(){
 
-document.getElementById(
-"thankyou"
-).style.display=
-"none";
-
-showHome();
+location.reload();
 
 }
