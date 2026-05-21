@@ -1,63 +1,80 @@
-document
-.getElementById("authForm")
+const auth = document.getElementById("auth");
+const main = document.getElementById("mainWebsite");
+const authForm = document.getElementById("authForm");
 
-.addEventListener(
+const authTitle = document.getElementById("authTitle");
+const authToggleText = document.getElementById("authToggleText");
 
-"submit",
+let loginMode = false;
 
-function(e){
+// START → SHOW LOGIN PAGE
+main.classList.add("hidden");
 
-e.preventDefault();
+function toggleAuth() {
 
-document
-.getElementById("auth")
-.style.display="none";
+loginMode = !loginMode;
 
-document
-.getElementById("mainWebsite")
-.classList.remove("hidden");
+if(loginMode){
+authTitle.innerText="Login";
+authToggleText.innerText="Don't have account?";
+}
+else{
+authTitle.innerText="Register";
+authToggleText.innerText="Already have account?";
+}
 
 }
 
-);
+authForm.addEventListener("submit",(e)=>{
 
+e.preventDefault();
+
+auth.style.display="none";
+
+main.classList.remove("hidden");
+
+showSection("home");
+
+});
 
 function showSection(id){
 
-document
-.getElementById("home")
-.style.display="none";
+const sections=document.querySelectorAll(".section-container");
 
-document
-.getElementById("booking")
-.style.display="none";
+sections.forEach(section=>{
+section.style.display="none";
+});
 
-document
-.getElementById("confirmationPage")
-.style.display="none";
+document.getElementById(id).style.display="block";
 
-document
-.getElementById(id)
-.style.display="block";
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
 
 }
 
+// BOOK NOW BUTTON
+document.addEventListener("DOMContentLoaded",()=>{
 
-document
-.getElementById("bookingForm")
+showSection("home");
 
-.addEventListener(
+});
 
-"submit",
 
-function(e){
+// RESERVE BUTTON
+const bookingForm=document.getElementById("bookingForm");
+
+if(bookingForm){
+
+bookingForm.addEventListener("submit",(e)=>{
 
 e.preventDefault();
 
-showSection(
-"confirmationPage"
-);
+document.getElementById("booking").style.display="none";
+
+document.getElementById("confirmationPage").style.display="block";
+
+});
 
 }
-
-);
