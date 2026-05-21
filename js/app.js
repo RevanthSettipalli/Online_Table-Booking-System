@@ -1,7 +1,9 @@
+// LOGIN / REGISTER
+
 const auth =
 document.getElementById("auth");
 
-const main =
+const website =
 document.getElementById("mainWebsite");
 
 const authForm =
@@ -15,42 +17,54 @@ function toggleAuth(){
 
 login=!login;
 
-document
-.getElementById("authTitle")
-.innerText=
-login
-?
-"Login"
-:
+const title=
+document.getElementById("authTitle");
+
+const button=
+document.querySelector(
+"#authForm button"
+);
+
+const text=
+document.getElementById(
+"authToggleText"
+);
+
+if(login){
+
+title.innerText="Login";
+
+button.innerText="Login";
+
+text.innerText=
+"New User?";
+
+}
+
+else{
+
+title.innerText=
 "Register";
 
-document
-.getElementById("submitBtn")
-.innerText=
-login
-?
-"Login"
-:
+button.innerText=
 "Register";
 
-document
-.getElementById("authText")
-.innerText=
-login
-?
-"New User?"
-:
+text.innerText=
 "Already have account?";
+
+}
 
 }
 
 
 
+// LOGIN
+
 authForm.addEventListener(
 
 "submit",
 
-(e)=>{
+function(e){
 
 e.preventDefault();
 
@@ -66,15 +80,14 @@ return;
 
 }
 
-auth.style.display="none";
+auth.style.display=
+"none";
 
-main.classList.remove(
+website.classList.remove(
 "hidden"
 );
 
-showSection(
-"home"
-);
+showHome();
 
 }
 
@@ -83,92 +96,50 @@ showSection(
 
 
 
-// CLEAR BOOKING FORM
+// HOME
 
-function clearBooking(){
+function showHome(){
 
-const form=
+document.querySelector(
+".hero"
+).style.display="flex";
+
 document.getElementById(
-"bookingForm"
-);
+"booking"
+).style.display="none";
 
-form.reset();
-
-document
-.getElementById(
-"name"
-)
-.value="";
-
-document
-.getElementById(
-"phone"
-)
-.value="";
-
-document
-.getElementById(
-"date"
-)
-.value="";
-
-document
-.getElementById(
-"time"
-)
-.value="";
-
-document
-.getElementById(
-"guests"
-)
-.value="";
+document.getElementById(
+"thankyou"
+).style.display="none";
 
 }
 
 
 
+// BOOK NOW BUTTON
 
-function showSection(id){
+function showBooking(){
 
-document
-.querySelectorAll(
-".section-container"
-)
-
-.forEach(
-
-x=>{
-
-x.style.display=
+document.querySelector(
+".hero"
+).style.display=
 "none";
 
-}
+document.getElementById(
+"booking"
+).style.display=
+"flex";
 
-);
-
-
-// ALWAYS CLEAR
-
-if(id==="booking"){
-
-clearBooking();
-
-}
-
-document
-.getElementById(
-id
-)
-
-.style.display=
-"block";
+document.getElementById(
+"bookingForm"
+).reset();
 
 }
 
 
 
 
+// RESERVE
 
 document
 .getElementById(
@@ -179,7 +150,7 @@ document
 
 "submit",
 
-(e)=>{
+function(e){
 
 e.preventDefault();
 
@@ -187,14 +158,17 @@ alert(
 "✅ Table Booked"
 );
 
+this.reset();
 
-// CLEAR AGAIN
+document.getElementById(
+"booking"
+).style.display=
+"none";
 
-clearBooking();
-
-showSection(
+document.getElementById(
 "thankyou"
-);
+).style.display=
+"flex";
 
 }
 
@@ -203,12 +177,15 @@ showSection(
 
 
 
+// BACK HOME
+
 function goHome(){
 
-clearBooking();
+document.getElementById(
+"thankyou"
+).style.display=
+"none";
 
-showSection(
-"home"
-);
+showHome();
 
 }
