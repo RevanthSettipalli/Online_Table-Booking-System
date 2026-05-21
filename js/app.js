@@ -1,60 +1,72 @@
-let isRegister = true;
+let register=true;
 
-// TOGGLE LOGIN / REGISTER
+
+// LOGIN
 
 function toggleAuth(){
 
-const title =
-document.getElementById("authTitle");
+const title=
+document.getElementById(
+"authTitle"
+);
 
-const submit =
-document.querySelector("#authForm button");
+const btn=
+document.querySelector(
+"#authForm button"
+);
 
-const text =
-document.getElementById("authToggleText");
+const text=
+document.getElementById(
+"authToggleText"
+);
 
-if(isRegister){
+if(register){
 
 title.innerHTML="Login";
 
-submit.innerHTML="Login";
+btn.innerHTML="Login";
 
-text.innerHTML="Don't have account?";
+text.innerHTML=
+"New User?";
 
 }
+
 else{
 
-title.innerHTML="Register";
+title.innerHTML=
+"Register";
 
-submit.innerHTML="Register";
+btn.innerHTML=
+"Register";
 
-text.innerHTML="Already have account?";
+text.innerHTML=
+"Already have account?";
 
 }
 
-isRegister=!isRegister;
+register=!register;
 
 }
 
 
-
-// LOGIN FORM
 
 document
-.getElementById("authForm")
+.getElementById(
+"authForm"
+)
 
 .addEventListener(
 
 "submit",
 
-function(e){
+(e)=>{
 
 e.preventDefault();
 
-if(isRegister){
+if(register){
 
 alert(
-"Registration Successful → Login"
+"Registration Successful"
 );
 
 toggleAuth();
@@ -64,12 +76,20 @@ return;
 }
 
 document
-.getElementById("auth")
-.style.display="none";
+.getElementById(
+"auth"
+)
+.style.display=
+"none";
 
 document
-.getElementById("mainWebsite")
-.classList.remove("hidden");
+.getElementById(
+"mainWebsite"
+)
+.classList
+.remove(
+"hidden"
+);
 
 showHome();
 
@@ -80,21 +100,30 @@ showHome();
 
 
 
-// SHOW HOME
+// HOME
 
 function showHome(){
 
 document
-.getElementById("home")
-.style.display="flex";
+.getElementById(
+"home"
+)
+.style.display=
+"flex";
 
 document
-.getElementById("booking")
-.style.display="none";
+.getElementById(
+"booking"
+)
+.style.display=
+"none";
 
 document
-.getElementById("thankyou")
-.style.display="none";
+.getElementById(
+"thankyou"
+)
+.style.display=
+"none";
 
 }
 
@@ -109,14 +138,12 @@ document
 
 ()=>{
 
-const book=
-document.getElementById(
+document
+.getElementById(
 "bookBtn"
-);
+)
 
-if(book){
-
-book.onclick=()=>{
+.onclick=()=>{
 
 document
 .getElementById(
@@ -132,8 +159,6 @@ document
 .style.display=
 "block";
 
-// CLEAR OLD VALUES
-
 document
 .getElementById(
 "bookingForm"
@@ -142,16 +167,12 @@ document
 
 };
 
-}
-
-}
-
-);
+});
 
 
 
 
-// BOOKING
+// BOOK
 
 document
 .getElementById(
@@ -162,19 +183,13 @@ document
 
 "submit",
 
-function(e){
+(e)=>{
 
 e.preventDefault();
 
 alert(
-"✅ Table Booked Successfully"
+"Table Booked Successfully"
 );
-
-// CLEAR FORM
-
-this.reset();
-
-// SHOW CONFIRM
 
 document
 .getElementById(
@@ -190,6 +205,8 @@ document
 .style.display=
 "flex";
 
+e.target.reset();
+
 }
 
 );
@@ -197,22 +214,10 @@ document
 
 
 
-// HOME BUTTON
+// HOME BTN
 
 function goHome(){
 
-document
-.getElementById(
-"thankyou"
-)
-.style.display=
-"none";
-
-document
-.getElementById(
-"home"
-)
-.style.display=
-"flex";
+showHome();
 
 }
