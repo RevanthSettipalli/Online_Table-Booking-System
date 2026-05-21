@@ -2,17 +2,16 @@ body{
     margin:0;
     font-family:Arial,sans-serif;
     overflow-x:hidden;
+    background:#111;
     }
     
     .hidden{
     display:none;
     }
     
-    
     /* LOGIN */
     
     .auth-container{
-    
     height:100vh;
     
     display:flex;
@@ -22,52 +21,31 @@ body{
     align-items:center;
     
     background:
-    
-    url("https://png.pngtree.com/background/20230611/original/pngtree-restaurant-table-set-with-plates-picture-image_3169395.jpg");
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4");
     
     background-size:cover;
-    
     background-position:center;
-    
     }
     
-    
     .auth-card{
-    
     width:380px;
     
     padding:40px;
     
     border-radius:20px;
     
-    background:rgba(0,0,0,.65);
+    background:rgba(0,0,0,.6);
     
     color:#DAA520;
     
-    box-shadow:0 0 30px black;
-    
+    backdrop-filter:blur(8px);
     }
-    
-    
     
     /* HOME */
     
     .hero{
     
     height:100vh;
-    
-    background:
-    
-    linear-gradient(
-    rgba(0,0,0,.35),
-    rgba(0,0,0,.35)
-    ),
-    
-    url("https://images.adsttc.com/media/images/63d0/3096/c765/4401/7182/eec6/large_jpg/akaari-premium-restaurant-nh-village-architects_4.jpg");
-    
-    background-size:cover;
-    
-    background-position:center;
     
     display:flex;
     
@@ -81,21 +59,39 @@ body{
     
     text-align:center;
     
-    }
+    background:
+    linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.45)
+    ),
     
+    url("https://images.unsplash.com/photo-1552566626-52f8b828add9");
+    
+    background-size:cover;
+    
+    background-position:center;
+    
+    }
     
     .hero h1{
     
-    font-size:70px;
+    font-size:72px;
     
     text-shadow:
-    2px 2px 20px black;
+    0 0 30px black;
+    
+    }
+    
+    .hero button{
+    
+    padding:15px 40px;
+    
+    font-size:25px;
     
     }
     
     
-    
-    /* BOOKING */
+    /* BOOKING PAGE */
     
     #booking{
     
@@ -108,38 +104,44 @@ body{
     background:
     
     linear-gradient(
-    rgba(0,0,0,.6),
-    rgba(0,0,0,.6)
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.45)
     ),
     
-    url("https://images.adsttc.com/media/images/63d0/3096/c765/4401/7182/eec6/large_jpg/akaari-premium-restaurant-nh-village-architects_4.jpg");
+    url("https://images.unsplash.com/photo-1559339352-11d035aa65de");
     
     background-size:cover;
+    
+    background-position:center;
     
     color:white;
     
     }
     
-    
     #booking form{
     
-    max-width:600px;
+    max-width:700px;
     
     margin:auto;
     
     padding:40px;
     
-    border-radius:20px;
-    
     background:
     
-    rgba(0,0,0,.65);
+    rgba(0,0,0,.7);
+    
+    border-radius:25px;
+    
+    }
+    
+    #booking input{
+    
+    margin-bottom:20px;
     
     }
     
     
-    
-    /* THANK YOU */
+    /* THANK YOU PAGE */
     
     #thankyou{
     
@@ -150,15 +152,17 @@ body{
     background:
     
     linear-gradient(
-    rgba(0,0,0,.45),
-    rgba(0,0,0,.45)
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.55)
     ),
     
-    url("https://img.freepik.com/premium-vector/restaurant-logo-template-luxury-restaurant-logo-design-vector-illustration_390140749.jpg?w=1380");
+    url("https://images.unsplash.com/photo-1514933651103-005eec06c04b");
     
     background-size:cover;
     
     background-position:center;
+    
+    color:white;
     
     display:flex;
     
@@ -168,73 +172,58 @@ body{
     
     align-items:center;
     
-    color:white;
-    
     text-align:center;
     
     padding:40px;
     
     }
     
-    
     #thankyou h1{
     
-    font-size:60px;
+    font-size:80px;
     
     text-shadow:
-    2px 2px 20px black;
+    0 0 30px black;
     
     }
     
-    
-    
     #thankyou h3,
-    #thankyou h4,
     #thankyou p{
     
     background:
     
     rgba(0,0,0,.5);
     
-    padding:15px;
+    padding:20px;
     
-    border-radius:12px;
+    border-radius:15px;
     
     }
-    
-    
     
     #thankyou button{
     
     margin-top:30px;
     
-    padding:15px 35px;
+    padding:15px 40px;
+    
+    font-size:20px;
     
     }
     
     
-    
-    /* COMMON */
-    
-    .section-container{
-    
-    display:none;
-    
-    }
-    
-    
+    /* MOBILE */
     
     @media(max-width:768px){
-    
-    .auth-card{
-    
-    width:90%;
-    
-    }
     
     .hero h1{
     
     font-size:40px;
+    
+    }
+    
+    .auth-card{
+    
+    width:90%;
     
     }
     
