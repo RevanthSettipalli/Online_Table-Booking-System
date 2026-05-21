@@ -58,11 +58,11 @@ body{
     
     padding:40px;
     
+    border-radius:20px;
+    
     background:
     
     rgba(0,0,0,.6);
-    
-    border-radius:20px;
     
     color:#DAA520;
     
@@ -76,7 +76,7 @@ body{
     
     }
     
-    #confirmationPage{
+    #thankyou{
     
     text-align:center;
     

@@ -1,46 +1,64 @@
-const auth=document.getElementById("auth");
+const auth=
+document.getElementById(
+"auth"
+);
 
-const main=document.getElementById("mainWebsite");
+const main=
+document.getElementById(
+"mainWebsite"
+);
 
-const authForm=document.getElementById("authForm");
-
-const authTitle=document.getElementById("authTitle");
-
-const submitBtn=document.getElementById("submitBtn");
-
-const authText=document.getElementById("authText");
+const authForm=
+document.getElementById(
+"authForm"
+);
 
 let login=false;
 
-main.classList.add("hidden");
 
 
 function toggleAuth(){
 
 login=!login;
 
-if(login){
+document
+.getElementById(
+"authTitle"
+)
 
-authTitle.innerText="Login";
+.innerText=
 
-submitBtn.innerText="Login";
-
-authText.innerText=
-"New User?";
-
-}
-
-else{
-
-authTitle.innerText="Register";
-
-submitBtn.innerText=
+login
+?
+"Login"
+:
 "Register";
 
-authText.innerText=
-"Already have account?";
+document
+.getElementById(
+"submitBtn"
+)
 
-}
+.innerText=
+
+login
+?
+"Login"
+:
+"Register";
+
+document
+.getElementById(
+"authText"
+)
+
+.innerText=
+
+login
+?
+"New User?"
+:
+"Already have account?";
 
 }
 
@@ -57,7 +75,7 @@ e.preventDefault();
 if(!login){
 
 alert(
-"Registration Successful → Login Now"
+"Registration Successful → Login"
 );
 
 toggleAuth();
@@ -68,9 +86,13 @@ return;
 
 auth.style.display="none";
 
-main.classList.remove("hidden");
+main.classList.remove(
+"hidden"
+);
 
-showSection("home");
+showSection(
+"home"
+);
 
 }
 
@@ -87,13 +109,22 @@ document
 
 .forEach(
 
-x=>x.style.display="none"
+x=>{
+
+x.style.display=
+"none";
+
+}
 
 );
 
 document
-.getElementById(id)
-.style.display="block";
+.getElementById(
+id
+)
+
+.style.display=
+"block";
 
 }
 
@@ -113,8 +144,14 @@ document
 e.preventDefault();
 
 alert(
-"✅ Table Booked Successfully"
+"✅ Table Booked"
 );
+
+document
+.getElementById(
+"bookingForm"
+)
+.reset();
 
 showSection(
 "thankyou"
@@ -123,3 +160,19 @@ showSection(
 }
 
 );
+
+
+
+function goHome(){
+
+document
+.getElementById(
+"bookingForm"
+)
+.reset();
+
+showSection(
+"home"
+);
+
+}
