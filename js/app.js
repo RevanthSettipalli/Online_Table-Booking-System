@@ -1,17 +1,11 @@
-const auth=
-document.getElementById(
-"auth"
-);
+const auth =
+document.getElementById("auth");
 
-const main=
-document.getElementById(
-"mainWebsite"
-);
+const main =
+document.getElementById("mainWebsite");
 
-const authForm=
-document.getElementById(
-"authForm"
-);
+const authForm =
+document.getElementById("authForm");
 
 let login=false;
 
@@ -22,12 +16,8 @@ function toggleAuth(){
 login=!login;
 
 document
-.getElementById(
-"authTitle"
-)
-
+.getElementById("authTitle")
 .innerText=
-
 login
 ?
 "Login"
@@ -35,12 +25,8 @@ login
 "Register";
 
 document
-.getElementById(
-"submitBtn"
-)
-
+.getElementById("submitBtn")
 .innerText=
-
 login
 ?
 "Login"
@@ -48,12 +34,8 @@ login
 "Register";
 
 document
-.getElementById(
-"authText"
-)
-
+.getElementById("authText")
 .innerText=
-
 login
 ?
 "New User?"
@@ -100,6 +82,53 @@ showSection(
 
 
 
+
+// CLEAR BOOKING FORM
+
+function clearBooking(){
+
+const form=
+document.getElementById(
+"bookingForm"
+);
+
+form.reset();
+
+document
+.getElementById(
+"name"
+)
+.value="";
+
+document
+.getElementById(
+"phone"
+)
+.value="";
+
+document
+.getElementById(
+"date"
+)
+.value="";
+
+document
+.getElementById(
+"time"
+)
+.value="";
+
+document
+.getElementById(
+"guests"
+)
+.value="";
+
+}
+
+
+
+
 function showSection(id){
 
 document
@@ -118,6 +147,15 @@ x.style.display=
 
 );
 
+
+// ALWAYS CLEAR
+
+if(id==="booking"){
+
+clearBooking();
+
+}
+
 document
 .getElementById(
 id
@@ -127,6 +165,8 @@ id
 "block";
 
 }
+
+
 
 
 
@@ -147,11 +187,10 @@ alert(
 "✅ Table Booked"
 );
 
-document
-.getElementById(
-"bookingForm"
-)
-.reset();
+
+// CLEAR AGAIN
+
+clearBooking();
 
 showSection(
 "thankyou"
@@ -163,13 +202,10 @@ showSection(
 
 
 
+
 function goHome(){
 
-document
-.getElementById(
-"bookingForm"
-)
-.reset();
+clearBooking();
 
 showSection(
 "home"
