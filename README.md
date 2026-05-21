@@ -125,20 +125,19 @@ Booking Confirmation
 
 ## 🔐 Login Page
 
-![Login Page](https://github.com/RevanthSettipalli/Online_Table-Booking-System/raw/main/assets/Login%20page%20.png)
+![](./assets/Login%20page%20.png)
 
 ---
 
 ## 🍽 Table Booking Page
 
-![Table Booking](https://github.com/RevanthSettipalli/Online_Table-Booking-System/raw/main/assets/Table%20Booking.png)
+![](./assets/Table%20Booking.png)
 
 ---
 
 ## ✅ Booking Confirmation Page
 
-![Booking Confirmation](https://github.com/RevanthSettipalli/Online_Table-Booking-System/raw/main/assets/Booking%20Confirmation.png)
-
+![](./assets/Booking%20Confirmation.png)
 
 
 # ⚙ Installation
