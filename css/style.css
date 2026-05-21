@@ -319,3 +319,117 @@
     }
     
     }
+    /* FORCE FULL SCREEN */
+
+html,
+body{
+width:100% !important;
+height:100% !important;
+margin:0 !important;
+padding:0 !important;
+overflow:hidden !important;
+}
+
+.container{
+max-width:none !important;
+width:100% !important;
+margin:0 !important;
+padding:0 !important;
+}
+
+/* BOOKING */
+
+#booking{
+
+position:fixed !important;
+
+top:0 !important;
+
+left:0 !important;
+
+right:0 !important;
+
+bottom:0 !important;
+
+width:100vw !important;
+
+height:100vh !important;
+
+margin:0 !important;
+
+padding-top:120px !important;
+
+background-image:
+
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.55)
+),
+
+url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=3000&q=100") !important;
+
+background-size:100% 100% !important;
+
+background-repeat:no-repeat !important;
+
+background-position:center !important;
+
+overflow:auto !important;
+
+}
+
+#booking form{
+
+width:700px !important;
+
+max-width:90% !important;
+
+margin:auto !important;
+
+}
+
+
+/* THANK YOU */
+
+#thankyou{
+
+position:fixed !important;
+
+top:0 !important;
+
+left:0 !important;
+
+right:0 !important;
+
+bottom:0 !important;
+
+width:100vw !important;
+
+height:100vh !important;
+
+margin:0 !important;
+
+background-image:
+
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.55)
+),
+
+url("https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=3000&q=100") !important;
+
+background-size:100% 100% !important;
+
+background-repeat:no-repeat !important;
+
+background-position:center !important;
+
+display:flex !important;
+
+justify-content:center !important;
+
+align-items:center !important;
+
+flex-direction:column !important;
+
+}
