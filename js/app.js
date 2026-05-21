@@ -1,22 +1,24 @@
+// Authentication
+
 function toggleAuth() {
 
     const title = document.getElementById("authTitle");
     const text = document.getElementById("authToggleText");
     
-    if (title.innerText === "Register") {
-    title.innerText = "Login";
-    text.innerText = "Don't have an account?";
+    if(title.innerText==="Register"){
+    title.innerText="Login";
+    text.innerText="Don't have an account?";
     }
-    else {
-    title.innerText = "Register";
-    text.innerText = "Already have an account?";
-    }
-    
+    else{
+    title.innerText="Register";
+    text.innerText="Already have an account?";
     }
     
-    const authForm = document.getElementById("authForm");
+    }
     
-    authForm.addEventListener("submit", function(e){
+    document
+    .getElementById("authForm")
+    .addEventListener("submit",(e)=>{
     
     e.preventDefault();
     
@@ -27,46 +29,43 @@ function toggleAuth() {
     .classList
     .remove("hidden");
     
-    showSection("home");
+    document.getElementById("home").style.display="flex";
     
     });
     
     
-    function showSection(id){
     
-    document
-    .querySelectorAll(".section-container")
-    .forEach(section=>{
-    section.style.display="none";
-    });
+    // Navigation
+    
+    function showSection(sectionId){
+    
+    // hide all sections
     
     document.getElementById("home").style.display="none";
     
-    const selected =
-    document.getElementById(id);
+    document.getElementById("booking").style.display="none";
     
-    if(selected){
-    selected.style.display="block";
+    document.getElementById("gallery").style.display="none";
+    
+    document.getElementById("contact").style.display="none";
+    
+    
+    // show selected
+    
+    document.getElementById(sectionId).style.display="block";
+    
     }
     
-    }
     
     
-    const bookingForm =
-    document.getElementById("bookingForm");
+    // Booking
     
-    if(bookingForm){
-    
-    bookingForm.addEventListener(
-    "submit",
-    function(e){
+    document
+    .getElementById("bookingForm")
+    .addEventListener("submit",(e)=>{
     
     e.preventDefault();
     
-    alert(
-    "Table booked successfully!"
-    );
+    alert("Booking Confirmed!");
     
     });
-    
-    }
