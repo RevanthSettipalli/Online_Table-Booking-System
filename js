@@ -1,121 +1,77 @@
-function showPage(pageId){
+const authForm=
+document.getElementById("authForm");
+
+const auth=
+document.getElementById("auth");
+
+const main=
+document.getElementById("mainWebsite");
+
+const title=
+document.getElementById("authTitle");
+
+const toggleText=
+document.getElementById("authToggleText");
+
+function toggleAuth(){
+
+if(title.textContent==="Register"){
+
+title.textContent="Login";
+
+toggleText.innerText=
+"Create Account";
+
+}
+
+else{
+
+title.textContent=
+"Register";
+
+toggleText.innerText=
+"Already have account?";
+
+}
+
+}
+
+authForm.addEventListener(
+
+"submit",
+
+(e)=>{
+
+e.preventDefault();
+
+auth.style.display="none";
+
+main.classList.remove("hidden");
+
+}
+
+);
+
+function showSection(id){
 
 document
+
 .querySelectorAll(
-'.container'
+
+".section-container"
+
 )
 
 .forEach(
 
-page=>
-
-page.classList
-.add('hidden')
+s=>s.style.display="none"
 
 );
 
 document
 
-.getElementById(
-pageId
-)
+.getElementById(id)
 
-.classList
-
-.remove(
-'hidden'
-);
+.style.display="block";
 
 }
-
-function registerUser(){
-
-alert(
-
-"Registration successful! Welcome to Hotel Bakasura."
-
-);
-
-showPage(
-"loginPage"
-);
-
-return false;
-
-}
-
-function validateLogin(){
-
-alert(
-
-"Login successful!"
-
-);
-
-showPage(
-"ambiencePage"
-);
-
-return false;
-
-}
-
-function confirmBooking(event){
-
-event.preventDefault();
-
-let name=
-
-document
-
-.getElementById(
-"name"
-)
-
-.value;
-
-let date=
-
-document
-
-.getElementById(
-"date"
-)
-
-.value;
-
-let time=
-
-document
-
-.getElementById(
-"time"
-)
-
-.value;
-
-let guests=
-
-document
-
-.getElementById(
-"guests"
-)
-
-.value;
-
-alert(
-
-`Thank you ${name}
-Booking confirmed
-${date}
-${time}
-Guests:${guests}`
-
-);
-
-showPage(
-"contactPage"
-);
-
-} 120805
