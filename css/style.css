@@ -2,9 +2,13 @@ body{
 
     margin:0;
     
-    font-family:Arial;
+    font-family:Arial,sans-serif;
+    
+    overflow-x:hidden;
     
     }
+    
+    
     
     .hidden{
     
@@ -12,27 +16,9 @@ body{
     
     }
     
-    .hero{
     
-    height:100vh;
     
-    background:
-    
-    url("https://png.pngtree.com/background/20230611/original/pngtree-restaurant-table-set-with-plates-picture-image_3169395.jpg");
-    
-    background-size:cover;
-    
-    display:flex;
-    
-    flex-direction:column;
-    
-    justify-content:center;
-    
-    align-items:center;
-    
-    color:white;
-    
-    }
+    /* LOGIN PAGE */
     
     .auth-container{
     
@@ -50,11 +36,15 @@ body{
     
     background-size:cover;
     
+    background-position:center;
+    
     }
+    
+    
     
     .auth-card{
     
-    width:350px;
+    width:380px;
     
     padding:40px;
     
@@ -62,24 +52,262 @@ body{
     
     background:
     
-    rgba(0,0,0,.6);
+    rgba(0,0,0,.65);
     
     color:#DAA520;
     
+    box-shadow:
+    
+    0 0 20px black;
+    
     }
+    
+    
+    
+    .auth-card button{
+    
+    margin-top:10px;
+    
+    }
+    
+    
+    
+    /* HOME */
+    
+    .hero{
+    
+    height:100vh;
+    
+    background:
+    
+    url("https://images.adsttc.com/media/images/63d0/2f6e/c765/4401/7182/eeab/large_jpg/akaari-premium-restaurant-nh-village-architects_2.jpg");
+    
+    background-size:cover;
+    
+    background-position:center;
+    
+    background-repeat:no-repeat;
+    
+    display:flex;
+    
+    flex-direction:column;
+    
+    justify-content:center;
+    
+    align-items:center;
+    
+    text-align:center;
+    
+    color:white;
+    
+    }
+    
+    
+    
+    .hero h1{
+    
+    font-size:60px;
+    
+    text-shadow:
+    
+    3px 3px 15px black;
+    
+    }
+    
+    
+    
+    .hero p{
+    
+    font-size:25px;
+    
+    }
+    
+    
+    
+    .hero button{
+    
+    margin-top:20px;
+    
+    padding:15px 35px;
+    
+    font-size:22px;
+    
+    }
+    
+    
+    
+    /* BOOKING PAGE */
+    
+    #booking{
+    
+    display:none;
+    
+    min-height:100vh;
+    
+    padding:80px;
+    
+    background:
+    
+    linear-gradient(
+    
+    rgba(0,0,0,.5),
+    
+    rgba(0,0,0,.5)
+    
+    ),
+    
+    url("https://images.adsttc.com/media/images/63d0/2f6e/c765/4401/7182/eeab/large_jpg/akaari-premium-restaurant-nh-village-architects_2.jpg");
+    
+    background-size:cover;
+    
+    color:white;
+    
+    }
+    
+    
+    
+    #booking h1{
+    
+    text-align:center;
+    
+    margin-bottom:40px;
+    
+    }
+    
+    
+    
+    #booking form{
+    
+    max-width:600px;
+    
+    margin:auto;
+    
+    padding:40px;
+    
+    background:
+    
+    rgba(0,0,0,.6);
+    
+    border-radius:20px;
+    
+    }
+    
+    
+    
+    #booking input{
+    
+    margin-bottom:20px;
+    
+    }
+    
+    
+    
+    /* THANK YOU */
+    
+    #thankyou{
+    
+    display:none;
+    
+    min-height:100vh;
+    
+    background:
+    
+    url("https://img.freepik.com/premium-vector/restaurant-logo-template-luxury-restaurant-logo-design-vector-illustration_390140749.jpg");
+    
+    background-size:cover;
+    
+    background-position:center;
+    
+    background-repeat:no-repeat;
+    
+    display:flex;
+    
+    flex-direction:column;
+    
+    justify-content:center;
+    
+    align-items:center;
+    
+    text-align:center;
+    
+    padding:40px;
+    
+    color:white;
+    
+    }
+    
+    
+    
+    #thankyou h1{
+    
+    font-size:60px;
+    
+    text-shadow:
+    
+    3px 3px 15px black;
+    
+    }
+    
+    
+    
+    #thankyou h3,
+    #thankyou h4,
+    #thankyou p{
+    
+    background:
+    
+    rgba(0,0,0,.6);
+    
+    padding:15px;
+    
+    border-radius:12px;
+    
+    }
+    
+    
+    
+    #thankyou button{
+    
+    margin-top:30px;
+    
+    padding:15px 35px;
+    
+    font-size:20px;
+    
+    }
+    
+    
+    
+    /* SECTION */
     
     .section-container{
     
     display:none;
     
-    padding:60px;
+    }
+    
+    
+    
+    /* MOBILE */
+    
+    @media(max-width:768px){
+    
+    .auth-card{
+    
+    width:90%;
     
     }
     
-    #thankyou{
+    .hero h1{
     
-    text-align:center;
+    font-size:40px;
     
-    padding-top:150px;
+    }
+    
+    #booking{
+    
+    padding:20px;
+    
+    }
     
     }
