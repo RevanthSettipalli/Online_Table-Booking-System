@@ -20,7 +20,7 @@
     }
     
     .hidden{
-    display:none;
+    display:none !important;
     }
     
     
@@ -28,12 +28,6 @@
     /* LOGIN PAGE */
     
     .auth-container{
-    
-    position:fixed;
-    
-    top:0;
-    
-    left:0;
     
     width:100vw;
     
@@ -48,31 +42,27 @@
     background:
     
     linear-gradient(
-    rgba(0,0,0,.55),
-    rgba(0,0,0,.55)
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.45)
     ),
     
-    url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=3000&q=100");
+    url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=2500&q=100");
     
     background-size:cover;
     
     background-position:center;
     
-    background-repeat:no-repeat;
-    
     }
     
     .auth-card{
     
-    width:420px;
+    width:400px;
     
     padding:40px;
     
     border-radius:20px;
     
-    background:
-    
-    rgba(0,0,0,.55);
+    background:rgba(0,0,0,.6);
     
     color:#DAA520;
     
@@ -80,15 +70,9 @@
     
     
     
-    /* HOME PAGE */
+    /* HOME */
     
     .hero{
-    
-    position:fixed;
-    
-    top:0;
-    
-    left:0;
     
     width:100vw;
     
@@ -102,9 +86,9 @@
     
     flex-direction:column;
     
-    text-align:center;
-    
     color:white;
+    
+    text-align:center;
     
     background:
     
@@ -113,13 +97,11 @@
     rgba(0,0,0,.45)
     ),
     
-    url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=3000&q=100");
+    url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2500&q=100");
     
     background-size:cover;
     
     background-position:center;
-    
-    background-repeat:no-repeat;
     
     }
     
@@ -129,17 +111,25 @@
     
     }
     
+    .hero p{
+    
+    font-size:28px;
+    
+    margin:20px;
+    
+    }
+    
     .hero button{
     
-    padding:15px 40px;
+    padding:16px 45px;
     
-    font-size:24px;
+    font-size:25px;
     
     }
     
     
     
-    /* TABLE BOOKING PAGE */
+    /* BOOKING PAGE */
     
     #booking{
     
@@ -166,9 +156,9 @@
     rgba(0,0,0,.55)
     ),
     
-    url("https://b.zmtcdn.com/data/pictures/8/19491888/6f0d6bfe2d34d9cf4267b7e26b378f55.jpg");
+    url("../assets/download.jpg");
     
-    background-size:100% 100%;
+    background-size:cover;
     
     background-position:center;
     
@@ -182,7 +172,7 @@
     
     text-align:center;
     
-    font-size:65px;
+    font-size:60px;
     
     margin-bottom:40px;
     
@@ -198,11 +188,11 @@
     
     padding:50px;
     
+    border-radius:20px;
+    
     background:
     
     rgba(0,0,0,.65);
-    
-    border-radius:20px;
     
     }
     
@@ -216,7 +206,7 @@
     
     
     
-    /* CONFIRM PAGE */
+    /* CONFIRMATION PAGE */
     
     #thankyou{
     
@@ -232,21 +222,6 @@
     
     height:100vh;
     
-    background:
-    
-    linear-gradient(
-    rgba(0,0,0,.45),
-    rgba(0,0,0,.45)
-    ),
-    
-    url("https://img.freepik.com/premium-vector/restaurant-logo-template-luxury-restaurant-logo-design-vector-illustration_390140749.jpg");
-    
-    background-size:100% 100%;
-    
-    background-position:center;
-    
-    background-repeat:no-repeat;
-    
     display:flex;
     
     justify-content:center;
@@ -258,6 +233,21 @@
     text-align:center;
     
     color:white;
+    
+    background:
+    
+    linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.45)
+    ),
+    
+    url("../assets/restaurant-logo-template-luxury-restaurant-logo-design-vector-illustration_610874-11664.jpeg");
+    
+    background-size:cover;
+    
+    background-position:center;
+    
+    background-repeat:no-repeat;
     
     }
     
@@ -265,11 +255,13 @@
     
     font-size:90px;
     
+    text-shadow:0 0 25px black;
+    
     }
     
     #thankyou h2{
     
-    font-size:50px;
+    font-size:45px;
     
     margin-top:20px;
     
@@ -277,7 +269,7 @@
     
     #thankyou p{
     
-    font-size:30px;
+    font-size:28px;
     
     margin-top:20px;
     
@@ -285,9 +277,9 @@
     
     #thankyou button{
     
-    margin-top:40px;
+    margin-top:30px;
     
-    padding:15px 50px;
+    padding:16px 50px;
     
     font-size:24px;
     
@@ -295,162 +287,14 @@
     
     
     
-    /* REMOVE BOOTSTRAP GAP */
+    /* REMOVE GAPS */
     
     .container{
     
     max-width:none !important;
     
-    width:100% !important;
-    
-    padding:0 !important;
-    
     margin:0 !important;
     
-    }
-    
-    
-    
-    /* MOBILE */
-    
-    @media(max-width:768px){
-    
-    .hero h1{
-    
-    font-size:45px;
-    
-    }
-    
-    .auth-card{
-    
-    width:90%;
-    
-    }
-    
-    #booking form{
-    
-    width:95%;
-    
-    }
-    
-    }
-    /* ========================= */
-/* TABLE BOOKING BACKGROUND */
-/* ========================= */
-
-#booking{
-
-    background:
-    
-    linear-gradient(
-    rgba(0,0,0,.55),
-    rgba(0,0,0,.55)
-    ),
-    
-    url("https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=2500&q=100");
-    
-    background-size:cover !important;
-    
-    background-position:center !important;
-    
-    background-repeat:no-repeat !important;
-    
-    width:100vw !important;
-    
-    height:100vh !important;
-    
-    padding:40px;
-    
-    overflow:auto;
-    
-    }
-    
-    
-    
-    /* ========================= */
-    /* BOOKING FORM CARD */
-    /* ========================= */
-    
-    #booking form{
-    
-    background:
-    
-    rgba(0,0,0,.65);
-    
-    padding:40px;
-    
-    border-radius:20px;
-    
-    max-width:700px;
-    
-    margin:auto;
-    
-    }
-    
-    
-    
-    /* ========================= */
-    /* CONFIRM PAGE BACKGROUND */
-    /* ========================= */
-    
-    #thankyou{
-    
-    background:
-    
-    linear-gradient(
-    rgba(0,0,0,.45),
-    rgba(0,0,0,.45)
-    ),
-    
-    url("https://img.freepik.com/premium-vector/luxury-restaurant-logo-design_586739-388.jpg");
-    
-    background-size:cover !important;
-    
-    background-position:center !important;
-    
-    background-repeat:no-repeat !important;
-    
-    width:100vw !important;
-    
-    height:100vh !important;
-    
-    display:flex;
-    
-    justify-content:center;
-    
-    align-items:center;
-    
-    flex-direction:column;
-    
-    text-align:center;
-    
-    color:white;
-    
-    }
-    
-    
-    
-    /* ========================= */
-    /* THANK YOU TEXT */
-    /* ========================= */
-    
-    #thankyou h1{
-    
-    font-size:80px;
-    
-    text-shadow:
-    2px 2px 20px black;
-    
-    }
-    
-    #thankyou h2{
-    
-    font-size:45px;
-    
-    }
-    
-    #thankyou p{
-    
-    font-size:30px;
+    padding:0 !important;
     
     }
