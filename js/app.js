@@ -1,53 +1,61 @@
-let register=true;
+let isRegister = true;
+
+// TOGGLE LOGIN / REGISTER
 
 function toggleAuth(){
 
-const title=document.getElementById("authTitle");
+const title =
+document.getElementById("authTitle");
 
-const text=document.getElementById("authToggleText");
+const submit =
+document.querySelector("#authForm button");
 
-const btn=document.querySelector("#authForm button");
+const text =
+document.getElementById("authToggleText");
 
-if(register){
+if(isRegister){
 
 title.innerHTML="Login";
 
-btn.innerHTML="Login";
+submit.innerHTML="Login";
 
 text.innerHTML="Don't have account?";
 
 }
-
 else{
 
 title.innerHTML="Register";
 
-btn.innerHTML="Register";
+submit.innerHTML="Register";
 
 text.innerHTML="Already have account?";
 
 }
 
-register=!register;
+isRegister=!isRegister;
 
 }
 
 
-document
 
+// LOGIN FORM
+
+document
 .getElementById("authForm")
 
 .addEventListener(
 
 "submit",
 
-(e)=>{
+function(e){
 
 e.preventDefault();
 
-if(register){
+if(isRegister){
 
-alert("Registered");
+alert(
+"Registration Successful → Login"
+);
 
 toggleAuth();
 
@@ -56,99 +64,155 @@ return;
 }
 
 document
-
 .getElementById("auth")
-
 .style.display="none";
 
 document
-
 .getElementById("mainWebsite")
+.classList.remove("hidden");
 
-.classList
-
-.remove("hidden");
+showHome();
 
 }
 
 );
 
 
-document
 
+
+// SHOW HOME
+
+function showHome(){
+
+document
+.getElementById("home")
+.style.display="flex";
+
+document
+.getElementById("booking")
+.style.display="none";
+
+document
+.getElementById("thankyou")
+.style.display="none";
+
+}
+
+
+
+// BOOK NOW
+
+document
 .addEventListener(
 
 "DOMContentLoaded",
 
 ()=>{
 
-document
+const book=
+document.getElementById(
+"bookBtn"
+);
 
-.getElementById("bookBtn")
+if(book){
 
-.addEventListener(
-
-"click",
-
-()=>{
-
-document
-
-.getElementById("home")
-
-.style.display="none";
+book.onclick=()=>{
 
 document
+.getElementById(
+"home"
+)
+.style.display=
+"none";
 
-.getElementById("booking")
+document
+.getElementById(
+"booking"
+)
+.style.display=
+"block";
 
-.style.display="block";
+// CLEAR OLD VALUES
+
+document
+.getElementById(
+"bookingForm"
+)
+.reset();
+
+};
+
+}
 
 }
 
 );
 
-}
 
 
-);
 
+// BOOKING
 
 document
-
-.getElementById("bookingForm")
+.getElementById(
+"bookingForm"
+)
 
 .addEventListener(
 
 "submit",
 
-(e)=>{
+function(e){
 
 e.preventDefault();
 
-alert("Table Booked");
+alert(
+"✅ Table Booked Successfully"
+);
 
-e.target.reset();
+// CLEAR FORM
+
+this.reset();
+
+// SHOW CONFIRM
 
 document
-
-.getElementById("booking")
-
-.style.display="none";
+.getElementById(
+"booking"
+)
+.style.display=
+"none";
 
 document
-
-.getElementById("thankyou")
-
-.style.display="flex";
+.getElementById(
+"thankyou"
+)
+.style.display=
+"flex";
 
 }
 
 );
 
 
+
+
+// HOME BUTTON
+
 function goHome(){
 
-location.reload();
+document
+.getElementById(
+"thankyou"
+)
+.style.display=
+"none";
+
+document
+.getElementById(
+"home"
+)
+.style.display=
+"flex";
 
 }
