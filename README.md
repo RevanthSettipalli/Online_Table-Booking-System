@@ -1,138 +1,212 @@
-# Online_Table-Booking-System
-# Hotel Bakasura - Table Booking System
+<div align="center">
 
-A modern, responsive web application for hotel table reservations with user authentication and an interactive gallery.
+# 🍽️ RoyalReserve
+### Premium Restaurant Table Reservation Platform
 
-![Hotel Bakasura](https://img.freepik.com/fotos-premium/resumen-borroso-cafeteria-cafeteria-restaurante-fondo_1339-170592.jpg)
+Luxury restaurant reservation experience with authentication, booking system, confirmation flow, and responsive design.
 
-## Features
+🌐 **Live Website**  
+https://revanthsettipalli.github.io/Online_Table-Booking-System/
 
-- **User Authentication**
-  - User registration
-  - Secure login system
-  - Session management
+</div>
 
-- **Table Booking System**
-  - Date and time selection
-  - Guest count specification
-  - Instant booking confirmation
+---
 
-- **Interactive Gallery**
-  - Grid layout showcase
-  - Hover effects
-  - High-quality restaurant images
-  - Responsive design
+# 📌 Project Overview
 
-- **Contact Information**
-  - Detailed address
-  - Public transportation guidance
-  - Direct contact options
+RoyalReserve is a professional restaurant table reservation website built to provide customers with a smooth and modern booking experience.
 
-## Technologies Used
+Users can:
 
-- HTML5
-- CSS3
-- JavaScript
+✔ Register Account  
+✔ Login Securely  
+✔ Explore Restaurant Homepage  
+✔ Book Restaurant Tables  
+✔ Receive Reservation Confirmation  
+✔ Access Contact Information  
+
+---
+
+# ✨ Features
+
+## 🔐 Authentication System
+
+- User Registration
+- User Login
+- Simple Navigation
+
+---
+
+## 🍽 Restaurant Reservation
+
+- Full Name Entry
+- Phone Number Entry
+- Reservation Date
+- Reservation Time
+- Guest Selection
+
+---
+
+## ✅ Booking Confirmation
+
+- Confirmation Message
+- Customer Support Contact
+- Return Home Navigation
+
+---
+
+## 🎨 User Interface
+
+- Luxury Restaurant Theme
+- Full Screen Background Images
 - Responsive Design
-- CSS Grid Layout
-- CSS Animations
+- Clean User Experience
 
-## Getting Started
+---
 
-### Prerequisites
+# 🛠 Technology Stack
 
-- A modern web browser (Chrome, Firefox, Safari, or Edge)
-- Basic understanding of web technologies
+| Technology | Purpose |
+|-----------|---------|
+| HTML5 | Structure |
+| CSS3 | Styling |
+| JavaScript | Interaction |
+| Bootstrap | Responsive Layout |
+| GitHub Pages | Deployment |
 
-### Installation
+---
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/yourusername/hotel-bakasura.git
-   ```
+# 📂 Project Structure
 
-2. Navigate to the project directory
-   ```bash
-   cd hotel-bakasura
-   ```
-
-3. Open `index.html` in your web browser
-
-### Usage
-
-1. **Registration/Login**
-   - Create a new account or login with existing credentials
-   - Access the main booking system
-
-2. **Viewing Gallery**
-   - Browse through restaurant images
-   - Experience interactive hover effects
-   - Get a feel for the ambiance
-
-3. **Making a Reservation**
-   - Select desired date and time
-   - Specify number of guests
-   - Receive instant confirmation
-
-4. **Contact Information**
-   - Find location details
-   - View transportation options
-   - Get direct contact information
-
-## Project Structure
-
-```
-hotel-bakasura/
+```text
+Online_Table-Booking-System
 │
-├── index.html          # Main HTML file
-├── README.md          # Project documentation
-└── assets/           # Project assets (if any)
+├── index.html
+├── README.md
+│
+├── css
+│   └── style.css
+│
+├── js
+│   └── app.js
+│
+├── assets
+│   ├── home.png
+│   ├── booking.png
+│   ├── confirmation.png
+│   ├── booking-bg.jpg
+│   └── confirmation-bg.jpg
 ```
 
-## Features in Detail
+---
 
-### User Authentication
-- Secure registration system
-- Login validation
-- User session management
+# 🚀 Application Workflow
 
-### Booking System
-- Interactive date picker
-- Time selection
-- Guest count validation
-- Booking confirmation system
+```text
+Register
+   ↓
+Login
+   ↓
+Home
+   ↓
+Book Now
+   ↓
+Booking Form
+   ↓
+Reserve
+   ↓
+Booking Confirmation
+```
 
-### Gallery
-- Responsive grid layout
-- Image hover effects
-- Optimized images
-- Smooth transitions
+---
 
-### Contact Section
-- Detailed location information
-- Transportation guidance
-- Multiple contact options
+# 📸 Screenshots
 
-## Contributing
+## 🏠 Home Page
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+<img
+src="assets/home.png"
+width="100%">
 
-## Contact
+---
 
-Hotel Bakasura - [@hotelbakasura](https://twitter.com/hotelbakasura)
+## 🍽 Booking Page
 
-Project Link: [https://github.com/yourusername/hotel-bakasura](https://github.com/yourusername/hotel-bakasura)
+<img
+src="assets/booking.png"
+width="100%">
 
-## License
+---
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+## ✅ Confirmation Page
 
-## Acknowledgments
+<img
+src="assets/confirmation.png"
+width="100%">
 
-- Images sourced from various free stock photo websites
-- Special thanks to all contributors
-- Inspired by modern hotel booking systems
+---
+
+# ⚙ Installation
+
+Clone Repository
+
+```bash
+git clone https://github.com/RevanthSettipalli/Online_Table-Booking-System.git
+```
+
+Open:
+
+```text
+index.html
+```
+
+---
+
+# 🌐 Deployment
+
+Hosted using GitHub Pages
+
+Live Demo:
+
+https://revanthsettipalli.github.io/Online_Table-Booking-System/
+
+---
+
+# 🔮 Future Enhancements
+
+- Payment Gateway
+- Admin Dashboard
+- Real-Time Availability
+- Email Notifications
+- Database Integration
+- Reservation Analytics
+
+---
+
+# 👨‍💻 Developer
+
+## Revanth Settipalli
+
+Frontend Developer • Web Developer
+
+GitHub:
+
+https://github.com/RevanthSettipalli
+
+---
+
+# ⭐ Support
+
+If you like this project:
+
+⭐ Star this repository  
+🍴 Fork this repository  
+📢 Share this project
+
+---
+
+<div align="center">
+
+Made with ❤️ using HTML • CSS • JavaScript
+
+</div>
